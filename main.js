@@ -45,7 +45,7 @@ function displayIt(data) {
 
   $('#zipCode').val(zip);
 
-  $temp.append('<p>The current temperature in '+city+ ' is: '+temp+'</p>');
+  $temp.append('<p>The current temperature in '+city+ ' is '+temp+' degrees fahrenheit</p>');
   $weather.append('<p>The humidity is at '+humidity+'</p>');
   $humidity.append('<p>Last updated on '+observationTime+'</p>');
 
