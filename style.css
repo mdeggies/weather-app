@@ -1,0 +1,48 @@
+.jumbotron {
+  font-family: 'Dancing Script';
+  background: url('background.png') no-repeat center;
+  height: 100vh;
+}
+
+.display_row {
+  background-color: white;
+}
+
+#header {
+  text-align: center;
+  background-color: white;
+  border-radius: 6px;
+}
+
+#input {
+  text-align: left;
+  padding-top: 20px;
+}
+
+#submit {
+  color: white;
+  background-color: #927E80;
+  border: none;
+}
+
+#submit:hover {
+  background-color: #BEE6F0;
+  border: none;
+}
+
+#button {
+  padding-top: 8px;
+  padding-bottom: 20px;
+}
+
+.display_row {
+  height: 55%;
+}
+
+h1 {
+  padding-top: 20px;
+}
+
+img {
+  height: 200px;
+}
