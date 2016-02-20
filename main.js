@@ -50,24 +50,24 @@ function displayIt(data) {
   $humidity.append('<p>Last updated on '+observationTime+'</p>');
 
   if ((weather == 'Overcast') || (weather.indexOf('Cloud') > -1)) {
-    $weather.append('<img src="cloud.png">');
+    $weather.append('<img src="/images/cloud.png">');
   }
   else if (weather == 'Rain') {
-    $weather.append('<img src="rain.png">');
+    $weather.append('<img src="/images/rain.png">');
   }
   else if (weather == 'Snow') {
-    $weather.append('<img src="snow.png">');
+    $weather.append('<img src="/images/snow.png">');
   }
   else if (weather.indexOf('Thunder') > -1) {
-    $weather.append('<img src="thunder.png">');
+    $weather.append('<img src="/images/thunder.png">');
   }
   else {
-    $weather.append('<img src="sun.png">');
+    $weather.append('<img src="/images/sun.png">');
   }
 }
 
 function repopulate() {
-  var zipCode = $('#zipCode').val(); //get user input
+  var zipCode = $('#zipCode').val();
   var zipRegex = /^\d{5}$/g;
   if (!zipRegex.test(zipCode)) { //if zipcode isn't valid
     return; //do nothing
