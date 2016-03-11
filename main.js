@@ -5,9 +5,10 @@ $(document).ready(init);
 function init() {
   $('#submit').on('click', repopulate);
   var str = 'autoip';
-  requestData(str); //fill with initial values based on user's location
+  requestData(str);
 }
 
+//fill with initial values based on user's location
 function requestData(str) {
   $.ajax({
     url: 'http://api.wunderground.com/api/1c06984b8bf2cf2c/conditions/q/'+str+'.json',
@@ -50,19 +51,19 @@ function displayIt(data) {
   $humidity.append('<p>Last updated on '+observationTime+'</p>');
 
   if ((weather == 'Overcast') || (weather.indexOf('Cloud') > -1)) {
-    $weather.append('<img src="/images/cloud.png">');
+    $weather.append('<img src="./images/cloud.png">');
   }
   else if (weather == 'Rain') {
-    $weather.append('<img src="/images/rain.png">');
+    $weather.append('<img src="./images/rain.png">');
   }
   else if (weather == 'Snow') {
-    $weather.append('<img src="/images/snow.png">');
+    $weather.append('<img src="./images/snow.png">');
   }
   else if (weather.indexOf('Thunder') > -1) {
-    $weather.append('<img src="/images/thunder.png">');
+    $weather.append('<img src="./images/thunder.png">');
   }
   else {
-    $weather.append('<img src="/images/sun.png">');
+    $weather.append('<img src="./images/sun.png">');
   }
 }
 
