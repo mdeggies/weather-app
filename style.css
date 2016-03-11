@@ -1,6 +1,6 @@
 .jumbotron {
   font-family: 'Dancing Script';
-  background: url('background.png') no-repeat center;
+  background: url('./images/background.png') no-repeat center;
   height: 100vh;
 }
 
